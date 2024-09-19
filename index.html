@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Sergei Diego Badloe!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>❤️ Hello Sergei Diego Badloe ❤️</h1>
+        <div id="passwordPrompt">
+            <p>Enter the password (hint: the day our lives changed.):</p>
+            <input type="password" id="passwordInput" placeholder="Password">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+        <div id="lovePrompt" style="display: none;">
+            <p>Do you love Shania?</p>
+            <button onclick="loveResponse('yes')">Yes</button>
+            <button onclick="loveResponse('no')">No</button>
+        </div>
+        <audio id="backgroundMusic" loop>
+            <source src="die-with-a-smile.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

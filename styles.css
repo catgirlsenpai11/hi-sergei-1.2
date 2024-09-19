@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: pink;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevent scrollbars from appearing during effects */
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid red;
+    border-radius: 15px;
+    background-color: rgba(255, 192, 203, 0.9);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.hint {
+    font-size: 14px;
+    color: #FFB6C1;
+}
+
+/* Confetti styles */
+.confetti {
+    position: absolute;
+    bottom: 100%;
+    width: 10px;
+    height: 10px;
+    opacity: 0.8;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Rain styles */
+.raindrop {
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: 15px;
+    background: blue;
+    opacity: 0.6;
+    animation: rain linear forwards;
+}
+
+@keyframes rain {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
